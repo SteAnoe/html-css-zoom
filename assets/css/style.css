@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+
+/* utility */
 .container{
     width: 90%;
     margin-left: auto;
@@ -24,8 +27,20 @@
     display: flex;
 }
 
+.flex-col{
+    flex-direction: column;
+}
+
+.center{
+    justify-content: center;
+}
+
 .space-b{
     justify-content: space-between;
+}
+
+.al-self{
+    align-self: center;
 }
 
 .al-it-center{
@@ -50,10 +65,18 @@ img{
     width: 100%;
 }
 
-.box-vh{
-    height: 100vh;
+#green{
+    color: green;
 }
 
+
+/* v-h */
+.box-vh{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* proporzioni */
 main{
     height: 90%;
     background-color: black;
@@ -64,25 +87,69 @@ footer{
     background-color: #222222;
 }
 
-#pinco{
+
+/* etichette top right */
+#top-right{
+    top: 40px;
+    right: 0;
+    color: white;
+    z-index: 2;
+}
+
+.top-right{
+    font-size: 15px;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+}
+
+/* etichetta pinco pallo */
+.pinco{
     bottom: 10px;
+    color: white;
+    background-color: rgba(32, 32, 32, 0.4);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+.fa-microphone-slash{
+    font-size: 15px;
 }
 
 
+/* footer */
 i{
-    font-size: 50px;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 #foot{
-    height: 90%;
-    width: 99%;
-    margin: auto;
+    color: white;
 }
-
-/* #foot-center div{
-    margin: 0px 10px;
-} */
 
 .unit{
-    margin-right: 10px;
+    margin-right: 15px;
 }
+
+#arrow{
+    font-size: 20px;
+}
+
+#foot-center,
+#foot-left{
+    text-align: center;
+}
+
+#foot-left{
+    padding-left: 10px;
+}
+
+#foot-right{
+    background-color: #383737;
+    color: red;
+    padding: 0 30px;
+}
+
